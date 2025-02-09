@@ -227,7 +227,7 @@ button {
     
     }
  }
- /* mobile menu */
+ /* mobile menu TBD */
 
  .mobile-menu {
      position: fixed;
@@ -276,3 +276,229 @@ button {
          display: none;
      }
  }
+
+/* Efective */
+
+.efective {
+    background-color: #2e2f42;
+    padding: 72px 0 72px;
+    padding-bottom: 72px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.efective-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 216px;
+    margin: auto;
+    margin-bottom: 72px;
+}
+
+.efective-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    background-color: #4d5ae5;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.efective-button:hover,
+.efective-button:focus {
+    background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+    .efective {
+        padding: 112 0 112px;
+        padding-bottom: 112px;
+        max-width: 768px;
+    }
+
+    .efective-subtitle {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .efective {
+        padding: 188px 0 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+    }
+
+    .efective-subtitle {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+        margin-bottom: 48px;
+    }
+
+}
+
+/* --------- Features -----  */
+@media screen and (min-width: 320px) {
+    .features {
+        padding: 96px 0;
+    
+    }
+
+    .features-subtitle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-bottom: 8px;
+
+    }
+
+    .features-item-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        
+    }
+
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px;
+        
+    }
+
+    .features-item {
+        /* flex-basis: calc((100% - 72px) / 4); */
+        width: 100%;
+        position: relative;
+
+    }
+
+    .features-item-icon {
+        display: none;
+        /* align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        margin-bottom: 8px; */
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .features-subtitle {
+        text-align: left;
+ 
+    }
+
+    .features-item-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+
+    }
+
+    .features-list {
+        display: flex;
+        gap: 72px;
+
+    }
+
+    .features-item {
+        flex-basis: calc((100% - 24px) / 3);
+        position: relative;
+
+    }
+
+    .features-item-icon {
+        display: none;
+    
+
+    }
+    
+}
+
+@media screen and (min-width: 1158px) {
+    .features {
+        padding: 120px 0;
+    }
+
+    .features-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin-bottom: 8px;
+    }
+
+    .features-item-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+
+    }
+
+    .features-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .features-item {
+        flex-basis: calc((100% - 72px) / 4);
+
+    }
+
+    .features-item-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        margin-bottom: 8px;
+
+    }
+
+}
