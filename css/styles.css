@@ -504,8 +504,7 @@ button {
     color: #f4f4fd;
     max-width: 288px;
     text-align: left;
-    padding-left: 16px;
-    padding-right: 16px;
+
 }
 
 .footer-studio {
@@ -544,6 +543,8 @@ button {
 .page-footer-list {
     display: flex;
     gap: 16px;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -620,6 +621,8 @@ button {
     border: none;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-subscribe:hover {
@@ -1403,7 +1406,11 @@ button {
     }
 
     .page-footer-text {
+        color: #f4f4fd;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
         max-width: 264px;
+        text-align: left;
     }
 
     .footer-studio {
