@@ -287,12 +287,8 @@ button {
 .team-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 72px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-    padding-left: 28px;
-    padding-right: 28px;    
 
 
 }
@@ -337,7 +333,6 @@ button {
 
 .team-item {
     background-color: #ffffff;
-    /* width: calc((100% - 72px) / 4); */
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -390,12 +385,10 @@ button {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    /* column-gap: 24px; */
     row-gap: 48px;
 }
 
 .portfolio-item {
-    /* width: calc((100% - 48px) / 3); */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -509,8 +502,6 @@ button {
 
 .footer-studio {
     text-align: center;
-    padding-top: 96px;
-
 }
 
 .footer-container {
@@ -518,14 +509,15 @@ button {
     align-items: baseline;
     flex-wrap: wrap;
     gap: 72px;
-    padding-left: 40px;
-    text-align: center;
+    padding-left: 16x;
+    padding-right: 16px;
     
 }
 
 .footer-social {
     text-align: center;
     justify-content: center;
+    margin: auto;
 
 }
 
@@ -587,7 +579,7 @@ button {
 }
 
 .input-subscribe {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -639,7 +631,7 @@ button {
 }
 
 .container-subscribe {
-    margin-top: 72px;
+    margin: 0;
 }
 
 .subscribe {
@@ -725,21 +717,17 @@ button {
 .nav-bar-menu {
     display: flex;
     align-items: center;
-}
 
-.list-navbar-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    
 }
 
 .list-navbar-menu  {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: block;
 }
 
 .list-menu-info {
@@ -786,10 +774,10 @@ button {
 }
 
 .address-info-menu {
-    font-size: 16px;
+    font-size: 20px;
     color: #434455;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -880,13 +868,14 @@ button {
     top: 50%;
     left: 50%;
     border-radius: 4px;
-    width: 408px;
     min-height: 584px;
     transform: translate(-50%, -50%);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .modal-close {
@@ -1081,9 +1070,9 @@ button {
     background-color: #404BBF;
 }
 @media screen and (min-width: 320px) {
+
     .modal {
         width: 288px;
-        min-height: 623;
     }
 }
 
@@ -1179,6 +1168,19 @@ button {
 
     }
 
+    .nav-bar-menu {
+        display: none;
+
+    }
+
+    .address-menu {
+        display: none;
+    }
+
+    .page-footer-list-menu {
+        display: none;
+    }
+
     .mobile-menu {
         display: none;
     }
@@ -1186,7 +1188,7 @@ button {
     /* --------- Efective -----  */
 
     .efective {
-        padding: 112 0 112px;
+        padding: 112px 0 112px;
         padding-bottom: 112px;
         max-width: 768px;
     }
@@ -1218,12 +1220,12 @@ button {
 
     .features-list {
         display: flex;
-        gap: 72px;
+        gap: 24px;
 
     }
 
     .features-item {
-        flex-basis: calc((100% - 24px) / 3);
+        flex-basis: calc((100% - 24px) / 2);
         position: relative;
 
     }
@@ -1236,7 +1238,7 @@ button {
     /* ------- Team ---  */
 
     .team-item {
-        width: calc((100% - 72px) / 2);
+        width: 264px;
     
     }
 
@@ -1261,15 +1263,30 @@ button {
      
     }
 
+    .footer-studio {
+        text-align: left;
+    }
+
+    .footer-social {
+        text-align: left;
+    }
+
     .subscribe {
         text-align: left;
 
     }
 
-
     /* --------- Modal -----  */
 
-    
+    .modal {
+        width: 408px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .input-subscribe {
+        width: 264px; 
+    }
 }
 
 
@@ -1431,6 +1448,5 @@ button {
     }
 
     /* --------- Modal -----  */
-
 
 }
